@@ -1,0 +1,28 @@
+<!-- header -->
+<header style="word-break: break-word; white-space: pre-wrap">
+  <div class="text-center pt-5 mt-5 px-4 border-bottom">
+    <h1 class="display-4 fw-bold">{{ this.page.title }}</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4" [innerHTML]="this.page.description"></p>
+      <div class="mb-5 d-grid gap-2 d-md-flex justify-content-md-center">
+        <a class="btn btn-primary btn-lg" href="/blogs">
+          <i class="fa-solid fa-caret-right"></i> Güncel Konular
+        </a>
+        <a class="btn btn-outline-secondary btn-lg" href="/docs">
+          <i class="fa-solid fa-caret-right"></i> Süreçler ve Dokümanlar
+        </a>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh">
+        <div class="container px-5">
+          <img
+            src="{{ this.urlForImg }}Upload/About/{{ this.page.imgUrl }}"
+            class="img-fluid border rounded-3 shadow-lg mb-4"
+            width="700"
+            height="500"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

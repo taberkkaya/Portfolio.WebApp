@@ -1,0 +1,58 @@
+<app-blank pageName="Oturum Bilgileri" [routes]="['Şifre Değiştir']">
+  <app-section sectionTitle="Şifre Değiştir">
+    <div class="container form-group mt-2">
+      <form
+        formValidate
+        #form="ngForm"
+        autocomplete="off"
+        (ngSubmit)="reset(form)"
+      >
+        <div class="modal-body">
+          <div class="form-group" style="position: relative">
+            <label>Şifre*</label>
+            <input
+              #password
+              type="password"
+              required
+              minlength="3"
+              class="form-control"
+              [(ngModel)]="this.model.newPassword"
+              name="password"
+            />
+            <i
+              class="fa-solid fa-eye"
+              style="position: absolute; top: 45px; right: 10px"
+              (mousedown)="showPassword()"
+              (mouseup)="hidePassword()"
+              (mouseleave)="hidePassword()"
+            ></i>
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="form-group">
+            <label>Şifre Tekrarı*</label>
+            <input
+              #confirm_password
+              type="password"
+              required
+              minlength="3"
+              class="form-control"
+              name="confirm_password"
+            />
+            <i
+              class="fa-solid fa-eye"
+              style="position: absolute; top: 130px; right: 10px"
+              (mousedown)="showPassword()"
+              (mouseup)="hidePassword()"
+              (mouseleave)="hidePassword()"
+            ></i>
+            <div class="invalid-feedback"></div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Güncelle</button>
+        </div>
+      </form>
+    </div>
+  </app-section>
+</app-blank>

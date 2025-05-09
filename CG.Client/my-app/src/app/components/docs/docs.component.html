@@ -1,0 +1,364 @@
+<app-blank pageName="Süreçler ve Dokümanlar" [routes]="['Dokümanlar']">
+  <app-section sectionTitle="Belge Listesi">
+    <div class="form-group row">
+      <div class="col-sm-9 col-6 d-grid d-sm-inline gap-2 gap-sm-0">
+        <button
+          class="btn btn-dark"
+          data-toggle="modal"
+          data-target="#createModal"
+        >
+          <i class="fa-solid fa-plus me-1"></i>
+          Belge Ekle
+        </button>
+        <button
+          class="btn btn-success ms-1"
+          data-toggle="modal"
+          data-target="#createCategoryModal"
+        >
+          <i class="fa-solid fa-plus me-1"></i>
+          Kategori Ekle
+        </button>
+      </div>
+
+      <div class="col-sm-3 col-6">
+        <input
+          [(ngModel)]="search"
+          type="search"
+          class="form-control"
+          placeholder="Aranacak değer girin..."
+        />
+      </div>
+    </div>
+
+    <div class="form-group mt-2">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Fotoğraf</th>
+            <th>Başlık</th>
+            <th>İşlemler</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for(data of docs | doc: search ;track data){
+          <tr>
+            <td>{{ $index + 1 }}</td>
+            <td style="max-width: 75px">
+              <img
+                class="img-fluid"
+                src="{{ this.urlForImg }}Upload/Documents/Img/{{
+                  data.coverImgUrl
+                }}"
+                alt=""
+              />
+            </td>
+            <td>{{ data.title }}</td>
+            <td>
+              <button
+                data-toggle="modal"
+                data-target="#updateModal"
+                (click)="get(data)"
+                class="btn btn-outline-primary btn-sm me-1"
+              >
+                <i class="fa-solid fa-edit"></i>
+              </button>
+              <button
+                (click)="deleteById(data)"
+                class="btn btn-outline-danger btn-sm"
+              >
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </td>
+          </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </app-section>
+</app-blank>
+
+<!-- Create Modal -->
+<div class="modal fade" id="createModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Belge Ekleme Formu</h1>
+        <button
+          type="button"
+          #createModalCloseBtn
+          class="btn btn-outline-danger"
+          data-dismiss="modal"
+        >
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+      <div class="col mt-2 w-100">
+        <button
+          class="btn btn-success ms-1 w-100"
+          data-toggle="modal"
+          data-target="#createCategoryModal"
+        >
+          <i class="fa-solid fa-plus me-1"></i>
+          Belge Kategorisi Ekle
+        </button>
+      </div>
+      <form
+        formValidate
+        #createForm="ngForm"
+        autocomplete="off"
+        (ngSubmit)="create(createForm)"
+      >
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Başlık*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="createModel.title"
+              class="form-control"
+              name="title"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+
+          <div class="form-group mt-2">
+            <label>İçerik*</label>
+            <quill-editor
+              style="height: 250px"
+              type="text"
+              minlength="3"
+              [(ngModel)]="createModel.description"
+              name="content"
+            ></quill-editor>
+            <div class="invalid-feedback"></div>
+          </div>
+
+          <div class="form-group mt-2">
+            <label>Doküman</label>
+            <input
+              #coverImg
+              class="form-control"
+              type="file"
+              id="documentUrl"
+              name="documentUrl"
+              (change)="onFileChangeForDocs($event, 'create')"
+            />
+          </div>
+
+          <div class="form-group mt-2">
+            <label>Kategori*</label>
+            <select
+              class="form-control"
+              name="blogCategoryId"
+              [(ngModel)]="createModel.documentCategoryId"
+              required
+            >
+              @for(category of docsCategories; track category){
+              <option [value]="category.id">{{ category.title }}</option>
+              }
+            </select>
+          </div>
+          <div class="form-group mt-2">
+            <label>Fotoğraf</label>
+            <input
+              #coverImg
+              class="form-control"
+              type="file"
+              id="coverImg"
+              name="coverImg"
+              (change)="onFileChange($event, 'create')"
+            />
+          </div>
+          <div class="form-group form-check mx-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="isFeatured"
+              [(ngModel)]="createModel.isFeatured"
+            />
+            <label class="form-check-label">Öne Çıkarılsın Mı?</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-dark w-100">Kaydet</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Update Modal -->
+<div class="modal fade" id="updateModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Belge Güncelleme Formu</h1>
+        <button
+          type="button"
+          #updateModalCloseBtn
+          class="btn btn-outline-danger"
+          data-dismiss="modal"
+        >
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+      <form
+        formValidate
+        #updateForm="ngForm"
+        autocomplete="off"
+        (ngSubmit)="update(updateForm)"
+      >
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Başlık*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="updateModel.title"
+              class="form-control"
+              name="updateTitle"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+
+          <div class="form-group">
+            <label>İçerik*</label>
+            <quill-editor
+              style="height: 250px"
+              type="text"
+              minlength="3"
+              [(ngModel)]="updateModel.description"
+              name="updateContent"
+            ></quill-editor>
+            <div class="invalid-feedback"></div>
+          </div>
+
+          <div class="form-group mt-2">
+            <label>Doküman</label>
+            <div class="row">
+              <div class="col-1">
+                <a
+                  class="btn btn-dark text-white text-center"
+                  href="{{ this.urlForImg }}Upload/Documents/Files/{{
+                    this.updateModel.documentUrl
+                  }}"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-file"></i>
+                </a>
+              </div>
+              <div class="col-11">
+                <input
+                  #coverImg
+                  class="form-control"
+                  type="file"
+                  id="documentUrl"
+                  name="documentUrl"
+                  (change)="onFileChangeForDocs($event, 'update')"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mt-2">
+            <label>Kategori*</label>
+            <select
+              class="form-control"
+              name="blogCategoryId"
+              [(ngModel)]="updateModel.documentCategoryId"
+              required
+            >
+              @for(category of docsCategories; track category){
+              <option [value]="category.id">{{ category.title }}</option>
+              }
+            </select>
+          </div>
+          <div class="form-group mt-2">
+            <label>Fotoğraf</label>
+            <div class="mb-2">
+              <img
+                #currentImg
+                class="img-thumbnail"
+                src="{{ this.urlForImg }}Upload/Documents/Img/{{
+                  this.updateModel.coverImgUrl
+                }}"
+                alt=""
+              />
+            </div>
+            <input
+              #coverImg
+              class="form-control"
+              type="file"
+              id="coverImg"
+              name="coverImg"
+              (change)="onFileChange($event, 'update')"
+            />
+          </div>
+          <div class="form-group form-check mx-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="isFeatured"
+              [(ngModel)]="updateModel.isFeatured"
+            />
+            <label class="form-check-label">Öne Çıkarılsın Mı?</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary w-100">Güncelle</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Create Category Modal -->
+<div
+  class="modal fade"
+  id="createCategoryModal"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Konu Kategorisi Ekleme Formu</h1>
+        <button
+          type="button"
+          #createCategoryModalCloseBtn
+          class="btn btn-outline-danger"
+          data-dismiss="modal"
+        >
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+      <form
+        formValidate
+        #createCategoryForm="ngForm"
+        autocomplete="off"
+        (ngSubmit)="createCategory(createForm)"
+      >
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Başlık*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="createCategoryModel.title"
+              class="form-control"
+              name="categoryTitle"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-dark w-100">Kaydet</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

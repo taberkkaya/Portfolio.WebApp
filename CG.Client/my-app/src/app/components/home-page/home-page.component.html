@@ -1,0 +1,67 @@
+<app-blank pageName="Ana Sayfa" [routes]="['Ana Sayfa']">
+  <app-section sectionTitle="Ana Sayfa İçerikleri">
+    <div class="container form-group mt-2">
+      <form
+        formValidate
+        #updateForm="ngForm"
+        autocomplete="off"
+        (ngSubmit)="update(updateForm)"
+      >
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Başlık*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="this.homePage.headerTitle"
+              class="form-control"
+              name="headerTitle"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+
+          <div class="form-group">
+            <label>İçerik*</label>
+            <quill-editor
+              style="width: 100%; height: 250px"
+              type="text"
+              minlength="3"
+              [(ngModel)]="this.homePage.headerContent"
+              name="headerContent"
+            ></quill-editor>
+            <div class="invalid-feedback"></div>
+          </div>
+
+          <div class="form-group">
+            <label>Ana Başlık*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="this.homePage.mainTitle"
+              class="form-control"
+              name="mainTitle"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+
+          <div class="form-group">
+            <label>Ana İçerik*</label>
+            <quill-editor
+              style="width: 100%; height: 250px"
+              type="text"
+              minlength="3"
+              [(ngModel)]="this.homePage.mainContent"
+              name="mainContent"
+            ></quill-editor>
+            <div class="invalid-feedback"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Güncelle</button>
+        </div>
+      </form>
+    </div>
+  </app-section>
+</app-blank>

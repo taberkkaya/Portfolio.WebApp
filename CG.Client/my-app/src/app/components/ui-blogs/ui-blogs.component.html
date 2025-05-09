@@ -1,0 +1,108 @@
+<!-- main -->
+<main>
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-md-3 d-none d-md-block">
+        <div class="list-group">
+          <a
+            class="list-group-item list-group-item-action"
+            [class.active]="selectedCategoryId === null"
+            (click)="filterByCategory(null)"
+            style="cursor: pointer"
+          >
+            Tümü
+          </a>
+          @for(category of blogCategories; track category){
+          <a
+            class="list-group-item list-group-item-action"
+            [class.active]="selectedCategoryId === category.id"
+            (click)="filterByCategory(category.id)"
+            style="cursor: pointer"
+          >
+            {{ category.title }}
+          </a>
+          }
+        </div>
+      </div>
+      <div class="col-md-9">
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Ana Sayfa</a>
+            </li>
+            <li class="breadcrumb-item"><a href="blogs">Güncel Konular</a></li>
+            <li class="breadcrumb-item active">{{ selectedCategoryName }}</li>
+          </ol>
+        </nav>
+        @for(blog of paged; track blog){
+
+        <div class="card mb-2 shadow">
+          <div class="row">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+              <img
+                src="{{ this.urlForImg }}Upload/Blogs/{{ blog.coverImgUrl }}"
+                alt=""
+                class="img-fluid rounded w-100"
+              />
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{ blog.title }}</h5>
+                <p
+                  class="card-text"
+                  [innerHTML]="blog.content.substring(0, 700).trimEnd() + '...'"
+                ></p>
+                <div class="d-flex flex-row-reverse">
+                  <button class="btn btn-dark" (click)="showDetails(blog)">
+                    Devamını Oku <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        }
+        <ul class="pagination justify-content-end" *ngIf="pages.length > 1">
+          <!-- Önceki butonu -->
+          <li class="page-item" [class.disabled]="currentPage === 1">
+            <a
+              class="page-link"
+              (click)="currentPage > 1 && getBlogsByPageNum(currentPage - 1)"
+              style="cursor: pointer"
+            >
+              Önceki
+            </a>
+          </li>
+
+          <!-- Sayfa numaraları -->
+          <li
+            class="page-item"
+            *ngFor="let page of pages"
+            [class.active]="page === currentPage"
+          >
+            <a
+              class="page-link"
+              (click)="getBlogsByPageNum(page)"
+              style="cursor: pointer"
+            >
+              {{ page }}
+            </a>
+          </li>
+
+          <!-- Sonraki butonu -->
+          <li class="page-item" [class.disabled]="currentPage === pages.length">
+            <a
+              class="page-link"
+              (click)="
+                currentPage < pages.length && getBlogsByPageNum(currentPage + 1)
+              "
+              style="cursor: pointer"
+            >
+              Sonraki
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>

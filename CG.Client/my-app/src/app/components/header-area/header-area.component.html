@@ -1,0 +1,54 @@
+<app-blank pageName="Hakkımda" [routes]="['UI Header']">
+  <app-section sectionTitle="Hakkımda">
+    <div class="container form-group mt-2">
+      <form
+        formValidate
+        #updateForm="ngForm"
+        autocomplete="off"
+        (ngSubmit)="update(updateForm)"
+      >
+        <div class="modal-body">
+          <div class="form-group">
+            <label>İsim*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="this.headerArea.firstName"
+              class="form-control"
+              name="firstName"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="form-group">
+            <label>Soyisim*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="this.headerArea.lastName"
+              class="form-control"
+              name="lastName"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="form-group">
+            <label>Ünvan*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="this.headerArea.profession"
+              class="form-control"
+              name="profession"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Güncelle</button>
+        </div>
+      </form>
+    </div>
+  </app-section>
+</app-blank>

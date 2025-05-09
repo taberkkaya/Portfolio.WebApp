@@ -1,0 +1,66 @@
+<app-blank pageName="İletişim" [routes]="['İletişim Bilgileri']">
+  <app-section sectionTitle="İletişim Bilgileri">
+    <div class="container form-group mt-2">
+      <form
+        formValidate
+        #updateForm="ngForm"
+        autocomplete="off"
+        (ngSubmit)="update(updateForm)"
+      >
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Başlık*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="this.contact.title"
+              class="form-control"
+              name="title"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="form-group">
+            <label>Açıklama*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="this.contact.description"
+              class="form-control"
+              name="description"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="form-group">
+            <label>Email*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="this.contact.email"
+              class="form-control"
+              name="email"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="form-group">
+            <label>Telefon*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="this.contact.phoneNumber"
+              class="form-control"
+              name="phoneNumber"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Güncelle</button>
+        </div>
+      </form>
+    </div>
+  </app-section>
+</app-blank>

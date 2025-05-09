@@ -1,0 +1,6 @@
+@CG.Personal.WebAPI_HostAddress = http://localhost:5193
+
+GET {{CG.Personal.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

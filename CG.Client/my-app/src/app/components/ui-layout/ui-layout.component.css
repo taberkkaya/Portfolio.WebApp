@@ -1,0 +1,55 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.ataberk {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cihan {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar {
+  background: #085e78;
+}
+.bg-dark {
+  background: #085e78 !important;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+}
+
+.img-fluid {
+  height: 100%;
+  object-fit: cover;
+}
+
+#map {
+  height: 450px;
+}
+
+@media (min-width: 768px) {
+  .card-img-top {
+    height: 32vh;
+  }
+
+  #map {
+    height: 100%;
+  }
+}

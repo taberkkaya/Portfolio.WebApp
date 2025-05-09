@@ -1,0 +1,16 @@
+<!-- header -->
+<main>
+  <header>
+    <div class="text-center pt-5 my-5 px-">
+      <h1 class="display-4 fw-bold">{{ this.page.title }}</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4" [innerText]="this.page.description"></p>
+
+        <ul class="list-group">
+          <li class="list-group-item">Mail: {{ this.page.email }}</li>
+          <li class="list-group-item">Telefon: {{ this.page.phoneNumber }}</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</main>

@@ -1,0 +1,37 @@
+<!-- header -->
+<header style="word-break: break-word; white-space: pre-wrap">
+  <div class="text-center pt-5 mt-5 px-4 border-bottom">
+    <h1 class="display-4 fw-bold">{{ this.doc.title }}</h1>
+    <div class="text-center">
+      <span class="badge badge-pill badge-primary">{{
+        doc.documentCategory.title
+      }}</span>
+    </div>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4" [innerHTML]="doc.description"></p>
+      <div class="mb-5 d-grid gap-2 d-md-flex justify-content-md-center">
+        <a
+          class="btn btn-outline-primary btn-lg"
+          href="{{ urlForImg }}Upload/Documents/Files/{{ doc.documentUrl }}"
+          target="_blank"
+        >
+          <i class="fa-solid fa-file-pdf"></i> Doküman
+        </a>
+        <a class="btn btn-outline-secondary btn-lg" href="docs">
+          <i class="fa-solid fa-caret-right"></i> Diğer Dokümanlar
+        </a>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh">
+        <div class="container px-5">
+          <img
+            src="{{ urlForImg }}Upload/Documents/Img/{{ doc.coverImgUrl }}"
+            class="img-fluid border rounded-3 shadow-lg mb-4"
+            width="700"
+            height="500"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

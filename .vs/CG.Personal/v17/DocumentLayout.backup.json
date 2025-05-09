@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ProjectCollection\\CG.Personal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89EEFBF2-422A-46D5-8289-A15C5D372C89}|CG.Personal\\CG.Personal.WebAPI\\CG.Personal.WebAPI.csproj|c:\\projectcollection\\cg.personal\\cg.personal\\cg.personal.webapi\\controllers\\aboutpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89EEFBF2-422A-46D5-8289-A15C5D372C89}|CG.Personal\\CG.Personal.WebAPI\\CG.Personal.WebAPI.csproj|solutionrelative:cg.personal\\cg.personal.webapi\\controllers\\aboutpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0E5A1F-2B93-4B2B-8661-2116FE5A7EDD}|CG.Personal\\CG.Personal.Application\\CG.Personal.Application.csproj|c:\\projectcollection\\cg.personal\\cg.personal\\cg.personal.application\\features\\aboutpages\\deleteaboutpagebyid\\deleteaboutpagebyidcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0E5A1F-2B93-4B2B-8661-2116FE5A7EDD}|CG.Personal\\CG.Personal.Application\\CG.Personal.Application.csproj|solutionrelative:cg.personal\\cg.personal.application\\features\\aboutpages\\deleteaboutpagebyid\\deleteaboutpagebyidcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D0E5A1F-2B93-4B2B-8661-2116FE5A7EDD}|CG.Personal\\CG.Personal.Application\\CG.Personal.Application.csproj|c:\\projectcollection\\cg.personal\\cg.personal\\cg.personal.application\\features\\aboutpages\\deleteaboutpagebyid\\deleteaboutpagebyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D0E5A1F-2B93-4B2B-8661-2116FE5A7EDD}|CG.Personal\\CG.Personal.Application\\CG.Personal.Application.csproj|solutionrelative:cg.personal\\cg.personal.application\\features\\aboutpages\\deleteaboutpagebyid\\deleteaboutpagebyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AboutPageController.cs",
+              "DocumentMoniker": "C:\\ProjectCollection\\CG.Personal\\CG.Personal\\CG.Personal.WebAPI\\Controllers\\AboutPageController.cs",
+              "RelativeDocumentMoniker": "CG.Personal\\CG.Personal.WebAPI\\Controllers\\AboutPageController.cs",
+              "ToolTip": "C:\\ProjectCollection\\CG.Personal\\CG.Personal\\CG.Personal.WebAPI\\Controllers\\AboutPageController.cs",
+              "RelativeToolTip": "CG.Personal\\CG.Personal.WebAPI\\Controllers\\AboutPageController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA1wBkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:13:30.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeleteAboutPageByIdCommandHandler.cs",
+              "DocumentMoniker": "C:\\ProjectCollection\\CG.Personal\\CG.Personal\\CG.Personal.Application\\Features\\AboutPages\\DeleteAboutPageById\\DeleteAboutPageByIdCommandHandler.cs",
+              "RelativeDocumentMoniker": "CG.Personal\\CG.Personal.Application\\Features\\AboutPages\\DeleteAboutPageById\\DeleteAboutPageByIdCommandHandler.cs",
+              "ToolTip": "C:\\ProjectCollection\\CG.Personal\\CG.Personal\\CG.Personal.Application\\Features\\AboutPages\\DeleteAboutPageById\\DeleteAboutPageByIdCommandHandler.cs",
+              "RelativeToolTip": "CG.Personal\\CG.Personal.Application\\Features\\AboutPages\\DeleteAboutPageById\\DeleteAboutPageByIdCommandHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:05:04.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeleteAboutPageByIdCommand.cs",
+              "DocumentMoniker": "C:\\ProjectCollection\\CG.Personal\\CG.Personal\\CG.Personal.Application\\Features\\AboutPages\\DeleteAboutPageById\\DeleteAboutPageByIdCommand.cs",
+              "RelativeDocumentMoniker": "CG.Personal\\CG.Personal.Application\\Features\\AboutPages\\DeleteAboutPageById\\DeleteAboutPageByIdCommand.cs",
+              "ToolTip": "C:\\ProjectCollection\\CG.Personal\\CG.Personal\\CG.Personal.Application\\Features\\AboutPages\\DeleteAboutPageById\\DeleteAboutPageByIdCommand.cs",
+              "RelativeToolTip": "CG.Personal\\CG.Personal.Application\\Features\\AboutPages\\DeleteAboutPageById\\DeleteAboutPageByIdCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:04:55.954Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

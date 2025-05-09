@@ -1,0 +1,64 @@
+<app-blank pageName="Hakkımda" [routes]="['Hakkımda İçeriği']">
+  <app-section sectionTitle="Hakkımda İçerikleri">
+    <div class="container form-group mt-2">
+      <form
+        formValidate
+        #updateForm="ngForm"
+        autocomplete="off"
+        (ngSubmit)="update(updateForm)"
+      >
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Başlık*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="this.aboutPage.title"
+              class="form-control"
+              name="title"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+
+          <div class="form-group mt-2">
+            <label>İçerik*</label>
+            <quill-editor
+              style="width: 100%; height: 250px"
+              type="text"
+              minlength="3"
+              [(ngModel)]="this.aboutPage.description"
+              name="description"
+            ></quill-editor>
+            <div class="invalid-feedback"></div>
+          </div>
+
+          <div class="form-group mt-2">
+            <label>Fotoğraf</label>
+            <div class="mb-2">
+              <img
+                #currentImg
+                class="img-thumbnail"
+                src="{{ this.urlForImg }}Upload/About/{{
+                  this.aboutPage.imgUrl
+                }}"
+                alt=""
+              />
+            </div>
+            <input
+              #coverImg
+              class="form-control"
+              type="file"
+              id="newImg"
+              name="newImg"
+              (change)="onFileChange($event)"
+            />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Güncelle</button>
+        </div>
+      </form>
+    </div>
+  </app-section>
+</app-blank>
