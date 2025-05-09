@@ -37,7 +37,7 @@
         "SecretKey": "YOUR_SECRET_KEY"
     }
 }
-
+```
 ## 🖥 Frontend
 
 The frontend of the application is built with **Angular** and **TypeScript**. After configuring the API, you can also set up the frontend to interact with the Web API.
@@ -45,4 +45,4 @@ The frontend of the application is built with **Angular** and **TypeScript**. Af
 ## 🛠 Troubleshooting
 
 - **500.30 Error**: If you encounter this error, make sure the **Upload** folder exists in the publish directory. The error occurs when the folder is missing.
-```
+
