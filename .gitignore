@@ -1,7 +1,0 @@
-CG.Server/CG.Personal/CG.Personal.WebAPI/appsettings.json
-CG.Server/CG.Personal/CG.Personal.WebAPI/appsettings.Development.json
-CG.Server/CG.Personal/CG.Personal.WebAPI/appsettings.Production.json
-CG.Server/CG.Personal/CG.Personal.WebAPI/Upload/
-
-bin/
-obj/

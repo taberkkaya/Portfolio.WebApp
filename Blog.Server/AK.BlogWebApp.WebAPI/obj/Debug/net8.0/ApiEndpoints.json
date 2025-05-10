@@ -1,0 +1,664 @@
+[
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.AboutPageController",
+    "Method": "Create",
+    "RelativePath": "api/AboutPage/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImgUrl",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.AboutPageController",
+    "Method": "Delete",
+    "RelativePath": "api/AboutPage/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.AboutPages.DeleteAboutPageById.DeleteAboutPageByIdCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.AboutPageController",
+    "Method": "GetActive",
+    "RelativePath": "api/AboutPage/GetActive",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.AboutPages.GetActiveAboutPage.GetActiveAboutPageQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.AboutPageController",
+    "Method": "GetAll",
+    "RelativePath": "api/AboutPage/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.AboutPages.GetAllAboutPages.GetAllAboutPagesQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.AboutPageController",
+    "Method": "Update",
+    "RelativePath": "api/AboutPage/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImgUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NewImg",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "isActive",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.Auth.Login.LoginCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Auth/ResetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.Auth.ResetPassword.ResetPasswordCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.BlogController",
+    "Method": "Create",
+    "RelativePath": "api/Blog/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Content",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CoverImgUrl",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "BlogCategoryId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsFeatured",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.BlogController",
+    "Method": "Delete",
+    "RelativePath": "api/Blog/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.Blogs.DeleteBlogById.DeleteBlogByIdCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.BlogController",
+    "Method": "GetAllBlogs",
+    "RelativePath": "api/Blog/GetAllBlogs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.Blogs.GetAllBlogs.GetAllBlogsQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.BlogController",
+    "Method": "GetAllBlogsByCategory",
+    "RelativePath": "api/Blog/GetAllBlogsByCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.Blogs.GetAllBlogsByCategory.GetAllBlogsByCategoryQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.BlogController",
+    "Method": "GetBlogById",
+    "RelativePath": "api/Blog/GetBlogById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.Blogs.GetBlogById.GetBlogByIdCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.BlogController",
+    "Method": "Update",
+    "RelativePath": "api/Blog/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Content",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImgUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NewImg",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "BlogCategoryId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsFeatured",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.BlogCategoryController",
+    "Method": "Create",
+    "RelativePath": "api/BlogCategory/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.BlogCategories.CreateBlogCategory.CreateBlogCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.BlogCategoryController",
+    "Method": "Delete",
+    "RelativePath": "api/BlogCategory/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.BlogCategories.DeleteBlogCategoryById.DeleteBlogCategoryByIdCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.BlogCategoryController",
+    "Method": "GetAll",
+    "RelativePath": "api/BlogCategory/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.BlogCategories.GetAllBlogCategories.GetAllBlogCategoriesQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.BlogCategoryController",
+    "Method": "HardDelete",
+    "RelativePath": "api/BlogCategory/HardDelete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.BlogCategories.HardDeleteBlogCategoryById.HardDeleteBlogCategoryByIdCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.ContactPageController",
+    "Method": "Get",
+    "RelativePath": "api/ContactPage/Get",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.ContactPages.GetContactPage.GetContactPageCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.ContactPageController",
+    "Method": "Update",
+    "RelativePath": "api/ContactPage/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.ContactPages.UpdateContactPage.UpdateContactPageCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.DocumentController",
+    "Method": "Create",
+    "RelativePath": "api/Document/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CoverImgUrl",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentUrl",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentCategoryId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsFeatured",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.DocumentController",
+    "Method": "Delete",
+    "RelativePath": "api/Document/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.Documents.DeleteDocumentById.DeleteDocumentByIdCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.DocumentController",
+    "Method": "GetAllDocuments",
+    "RelativePath": "api/Document/GetAllDocuments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.Documents.GetAllDocuments.GetAllDocumentsQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.DocumentController",
+    "Method": "GetAllDocumentsByCategory",
+    "RelativePath": "api/Document/GetAllDocumentsByCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.Documents.GetAllDocumentsByCategory.GetAllDocumentsByCategoryQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.DocumentController",
+    "Method": "GetDocumentById",
+    "RelativePath": "api/Document/GetDocumentById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.Documents.GetDocumentById.GetDocumentByIdCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.DocumentController",
+    "Method": "Update",
+    "RelativePath": "api/Document/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CoverImgUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NewImgUrl",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NewDocument",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentCategoryId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsFeatured",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.DocumentCategoryController",
+    "Method": "Create",
+    "RelativePath": "api/DocumentCategory/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.DocumentCategories.CreateDocumentCategory.CreateDocumentCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.DocumentCategoryController",
+    "Method": "Delete",
+    "RelativePath": "api/DocumentCategory/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.DocumentCategories.DeleteDocumentCategory.DeleteDocumentCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.DocumentCategoryController",
+    "Method": "GetAll",
+    "RelativePath": "api/DocumentCategory/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.DocumentCategories.GetAllDocumentCategories.GetAllDocumentCategoriesQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.HeaderAreaController",
+    "Method": "Get",
+    "RelativePath": "api/HeaderArea/Get",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.HeaderAreas.GetHeaderArea.GetHeaderAreaCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.HeaderAreaController",
+    "Method": "Update",
+    "RelativePath": "api/HeaderArea/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.HeaderAreas.UpdateHeaderArea.UpdateHeaderAreaCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.HomePageController",
+    "Method": "Get",
+    "RelativePath": "api/HomePage/Get",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.HomePages.GetHomePage.GetHomePageQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AK.BlogWebApp.WebAPI.Controllers.HomePageController",
+    "Method": "Update",
+    "RelativePath": "api/HomePage/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AK.BlogWebApp.Application.Features.HomePages.UpdateHomePage.UpdateHomePageCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

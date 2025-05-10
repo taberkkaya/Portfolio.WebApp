@@ -1,0 +1,102 @@
+<!-- header -->
+<header style="word-break: break-word; white-space: pre-wrap">
+  <div class="text-center pt-5 mt-5 px-4 border-bottom">
+    <h1 class="display-4 fw-bold">{{ this.page.headerTitle }}</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4" [innerHTML]="this.page.headerContent"></p>
+      <div class="mb-5 d-grid gap-2 d-md-flex justify-content-md-center">
+        <a class="btn btn-primary btn-lg" href="/blogs">
+          <i class="fa-solid fa-caret-right"></i> Güncel Konular
+        </a>
+        <a class="btn btn-outline-secondary btn-lg" href="/docs">
+          <i class="fa-solid fa-caret-right"></i> Süreçler ve Dokümanlar
+        </a>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh">
+        <div class="container px-5">
+          <img
+            src="./assets/dotnet-angular.png"
+            class="img-fluid border rounded-3 shadow-lg mb-4"
+            width="700"
+            height="500"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- main -->
+<main style="word-break: break-word; white-space: pre-wrap">
+  <div class="bg-dark text-secondary px-4 py-5 text-center text-white">
+    <div class="py-5">
+      <h1 class="display-5 fw-bold">{{ this.page.mainTitle }}</h1>
+      <div class="col-lg-6 mx-auto">
+        <div [innerHTML]="this.page.mainContent"></div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <a class="btn btn-outline-warning btn-lg" href="/about">
+            <i class="fa-solid fa-caret-right"></i> Hakkımda
+          </a>
+          <a class="btn btn-outline-light btn-lg" href="/contact">
+            <i class="fa-solid fa-caret-right"></i> İletişim
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
+      @for(blog of blogs; track blog){
+      <div class="col">
+        <div class="card mb-3 shadow-lg h-100">
+          <img
+            src="{{ this.urlForImg }}Upload/Blogs/{{ blog.coverImgUrl }}"
+            class="card-img-top"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title text-bold">{{ blog.title }}</h5>
+            <p
+              class="card-text"
+              [innerHTML]="blog.content.substring(0, 700).trimEnd() + '...'"
+            ></p>
+          </div>
+          <div class="card-footer d-flex flex-row-reverse">
+            <button class="btn bg-dark" (click)="showDetailsForBlog(blog)">
+              Devamını Oku <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
+      @for(doc of docs; track doc){
+      <div class="col">
+        <div class="card mb-3 shadow-lg h-100">
+          <img
+            class="card-img-top"
+            src="{{ this.urlForImg }}Upload/Documents/Img/{{ doc.coverImgUrl }}"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title text-bold">{{ doc.title }}</h5>
+            <p
+              class="card-text"
+              [innerHTML]="doc.description.substring(0, 700).trimEnd() + '...'"
+            ></p>
+          </div>
+          <div class="card-footer d-flex flex-row-reverse">
+            <button class="btn btn-dark" (click)="showDetailsForDoc(doc)">
+              Devamını Oku <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</main>

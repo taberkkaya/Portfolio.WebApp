@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "vRExYYPiMI4jAscKvmN3i4OxkdgT6IlQobXLB9LlW18=",
+  "Source": "AK.BlogWebApp.WebAPI",
+  "BasePath": "_content/AK.BlogWebApp.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

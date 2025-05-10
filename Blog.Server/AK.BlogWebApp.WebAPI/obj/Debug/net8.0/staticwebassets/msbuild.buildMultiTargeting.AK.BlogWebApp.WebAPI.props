@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AK.BlogWebApp.WebAPI.props" />
+</Project>

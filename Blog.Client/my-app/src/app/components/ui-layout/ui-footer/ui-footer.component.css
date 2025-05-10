@@ -1,0 +1,18 @@
+.ataberk {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header-title {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar {
+  background: #085e78;
+}
+.bg-dark {
+  background: #085e78 !important;
+}
