@@ -1,11 +1,11 @@
-# Portfolio.WebApp
+# Blog.WebApp
 
 ## 🚀 Technologies
 
 - .NET Core Web API
-- TS.CleanArchitecture
-- TS.GenericRepository
-- TS.Result
+- **TS.CleanArchitecture**
+- **TS.GenericRepository**
+- **TS.Result**
 - Clean Architecture
 - Result Pattern
 - CQRS Pattern
@@ -15,45 +15,25 @@
 - JwtBearer
 - TypeScript
 - Angular
+- **angular-ts-cli**
 
-## appsettings.json Template
+![image](https://github.com/user-attachments/assets/66001437-89ca-4c98-8cb8-a8c7eb8557ae)
+![image](https://github.com/user-attachments/assets/8673b17d-cdac-4e8f-9b55-7b4fbef8cfc6)
+![image](https://github.com/user-attachments/assets/53b3bb80-9b06-41b8-8b13-2c299a68e5a1)
+![image](https://github.com/user-attachments/assets/d8a953cd-5026-4b31-abfc-7ebc208409f4)
+![image](https://github.com/user-attachments/assets/b6479008-ce90-42c3-bf03-2dbc1154eeb0)
+![image](https://github.com/user-attachments/assets/265c50d7-c181-4c31-a3ea-561f3d0b2bee)
 
-```json
-{
-    "Logging": {
-        "LogLevel": {
-            "Default": "Information",
-            "Microsoft.AspNetCore": "Warning"
-        }
-    },
-    "AllowedHosts": "*",
-    "ConnectionStrings": {
-        "SqlServerLocal": "Data Source=YOUR_LOCAL_SERVER;Initial Catalog=YOUR_DB_NAME;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False",
-        "SqlServer": "Server=YOUR_REMOTE_SERVER;Database=YOUR_REMOTE_DB;User Id=YOUR_USERNAME;Password=YOUR_PASSWORD;TrustServerCertificate=True;"
-    },
-    "Jwt": {
-        "Issuer": "YOUR_ISSUER",
-        "Audience": "YOUR_AUDIENCE",
-        "SecretKey": "YOUR_SECRET_KEY"
-    }
-}
-```
-## 🖥 Frontend
+![image](https://github.com/user-attachments/assets/8a5f347b-c9c3-4894-aebc-19a31a28f9b6)
+![image](https://github.com/user-attachments/assets/c6adca94-d07e-4fd9-bc98-45053bfc3bbc)
+![image](https://github.com/user-attachments/assets/1041de21-bcc9-43ea-b27d-0be95f780d71)
+![image](https://github.com/user-attachments/assets/54e0ae8b-d105-499b-bce2-00fa7ad33ba9)
+![image](https://github.com/user-attachments/assets/a17f00fc-12ab-443a-9604-5b6085986ffd)
+![image](https://github.com/user-attachments/assets/fff7c300-5759-4f97-b8e3-8aef22257bcb)
+![image](https://github.com/user-attachments/assets/619f076b-bd7e-43be-a678-40e0cb0484e2)
 
-The frontend of the application is built with **Angular** and **TypeScript**. After configuring the API, you can also set up the frontend to interact with the Web API.
 
-## 🛠 Troubleshooting
 
-- **500.30 Error**: If you encounter this error, make sure the **Upload** folder exists in the publish directory. The error occurs when the folder is missing.
-
-![image](https://github.com/user-attachments/assets/3247a192-1cd7-46e6-afbc-a7fc9d902822)
-![image](https://github.com/user-attachments/assets/af39bd95-54d1-4bcd-93db-9f7422a7b6e3)
-![image](https://github.com/user-attachments/assets/d00cb55c-d20c-4ea3-a9d4-967b1a176959)
-![image](https://github.com/user-attachments/assets/04238592-d9b4-4b29-9945-7f27ec81ef12)
-![image](https://github.com/user-attachments/assets/a0160abb-84f9-4abb-9b51-bf142e04d640)
-![image](https://github.com/user-attachments/assets/ed1aecfb-625b-4f1e-ae2b-25129db9a1b0)
-![image](https://github.com/user-attachments/assets/d223f2d0-bd5c-4730-a7c4-ee24b3a13b59)
-![image](https://github.com/user-attachments/assets/4d3f1296-2a02-460a-912a-f23f8fa6b8ff)
 
 
 
