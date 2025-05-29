@@ -1,9 +1,11 @@
 <!-- header -->
-<header style="word-break: break-word; white-space: pre-wrap">
-  <div class="text-center pt-5 mt-5 px-4 border-bottom">
+<header>
+  <div
+    class="d-flex flex-column justify-content-center align-items-center pt-5 mt-5 px-4 border-bottom"
+  >
     <h1 class="display-4 fw-bold">{{ this.page.title }}</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4" [innerHTML]="this.page.description"></p>
+      <div class="lead mb-4" [innerHTML]="this.page.description"></div>
       <div class="mb-5 d-grid gap-2 d-md-flex justify-content-md-center">
         <a class="btn btn-primary btn-lg" href="/blogs">
           <i class="fa-solid fa-caret-right"></i> Güncel Konular

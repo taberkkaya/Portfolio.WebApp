@@ -31,7 +31,7 @@
               <a href="#">Ana Sayfa</a>
             </li>
             <li class="breadcrumb-item">
-              <a href="blogs">Süreçler ve Dokümanlar</a>
+              <a href="docs">Süreçler ve Dokümanlar</a>
             </li>
             <li class="breadcrumb-item active">{{ selectedCategoryName }}</li>
           </ol>
@@ -51,13 +51,13 @@
             </div>
             <div class="col-12 col-md-8">
               <div class="card-body">
-                <h5 class="card-title">{{ doc.title }}</h5>
-                <p
-                  class="card-text"
+                <h5 class="card-title text-bold">{{ doc.title }}</h5>
+                <div
+                  class="card-text mb-3"
                   [innerHTML]="
-                    doc.description.substring(0, 700).trimEnd() + '...'
+                    doc.description.substring(0, 400).trimEnd() + '...'
                   "
-                ></p>
+                ></div>
                 <div class="d-flex flex-row-reverse">
                   <button class="btn btn-dark" (click)="showDetails(doc)">
                     Devamını Oku <i class="fa-solid fa-arrow-right"></i>

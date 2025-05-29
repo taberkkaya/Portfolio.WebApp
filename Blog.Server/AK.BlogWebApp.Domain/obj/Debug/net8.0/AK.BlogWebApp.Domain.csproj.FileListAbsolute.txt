@@ -24,3 +24,16 @@ C:\Users\ataberk\Desktop\deneme\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj
 C:\Users\ataberk\Desktop\deneme\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\refint\AK.BlogWebApp.Domain.dll
 C:\Users\ataberk\Desktop\deneme\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\AK.BlogWebApp.Domain.pdb
 C:\Users\ataberk\Desktop\deneme\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\ref\AK.BlogWebApp.Domain.dll
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\bin\Debug\net8.0\AK.BlogWebApp.Domain.deps.json
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\bin\Debug\net8.0\AK.BlogWebApp.Domain.dll
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\bin\Debug\net8.0\AK.BlogWebApp.Domain.pdb
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\AK.BlogWebApp.Domain.csproj.AssemblyReference.cache
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\AK.BlogWebApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\AK.BlogWebApp.Domain.AssemblyInfoInputs.cache
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\AK.BlogWebApp.Domain.AssemblyInfo.cs
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\AK.BlogWebApp.Domain.csproj.CoreCompileInputs.cache
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\AK.BlogWebApp.Domain.sourcelink.json
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\AK.BlogWebApp.Domain.dll
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\refint\AK.BlogWebApp.Domain.dll
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\AK.BlogWebApp.Domain.pdb
+C:\ProjectCollection\Blog.WebApp\Blog.Server\AK.BlogWebApp.Domain\obj\Debug\net8.0\ref\AK.BlogWebApp.Domain.dll

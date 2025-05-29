@@ -1,5 +1,5 @@
 <!-- header -->
-<header style="word-break: break-word; white-space: pre-wrap">
+<header>
   <div class="text-center pt-5 mt-5 px-4 border-bottom">
     <h1 class="display-4 fw-bold">{{ this.blog.title }}</h1>
     <div class="text-center">
@@ -8,7 +8,7 @@
       }}</span>
     </div>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4" [innerHTML]="this.blog.content"></p>
+      <div class="lead mb-4" [innerHTML]="this.blog.content"></div>
       <div class="mb-5 d-grid gap-2 d-md-flex justify-content-md-center">
         <a class="btn btn-outline-secondary btn-lg" href="blogs">
           <i class="fa-solid fa-caret-right"></i> Diğer Konular

@@ -1,9 +1,11 @@
 <!-- header -->
-<header style="word-break: break-word; white-space: pre-wrap">
-  <div class="text-center pt-5 mt-5 px-4 border-bottom">
+<header>
+  <div
+    class="d-flex flex-column justify-content-center align-items-center pt-5 mt-5 px-4 border-bottom"
+  >
     <h1 class="display-4 fw-bold">{{ this.page.headerTitle }}</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4" [innerHTML]="this.page.headerContent"></p>
+      <div class="lead mb-4" [innerHTML]="this.page.headerContent"></div>
       <div class="mb-5 d-grid gap-2 d-md-flex justify-content-md-center">
         <a class="btn btn-primary btn-lg" href="/blogs">
           <i class="fa-solid fa-caret-right"></i> Güncel Konular
@@ -27,13 +29,13 @@
   </div>
 </header>
 <!-- main -->
-<main style="word-break: break-word; white-space: pre-wrap">
-  <div class="bg-dark text-secondary px-4 py-5 text-center text-white">
+<main>
+  <div class="bg-dark text-secondary px-4 py-5 text-white">
     <div class="py-5">
-      <h1 class="display-5 fw-bold">{{ this.page.mainTitle }}</h1>
+      <h1 class="display-5 fw-bold text-center">{{ this.page.mainTitle }}</h1>
       <div class="col-lg-6 mx-auto">
         <div [innerHTML]="this.page.mainContent"></div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center pt-5">
           <a class="btn btn-outline-warning btn-lg" href="/about">
             <i class="fa-solid fa-caret-right"></i> Hakkımda
           </a>
@@ -59,7 +61,7 @@
             <h5 class="card-title text-bold">{{ blog.title }}</h5>
             <p
               class="card-text"
-              [innerHTML]="blog.content.substring(0, 700).trimEnd() + '...'"
+              [innerHTML]="blog.content.substring(0, 300).trimEnd() + '...'"
             ></p>
           </div>
           <div class="card-footer d-flex flex-row-reverse">
@@ -86,7 +88,7 @@
             <h5 class="card-title text-bold">{{ doc.title }}</h5>
             <p
               class="card-text"
-              [innerHTML]="doc.description.substring(0, 700).trimEnd() + '...'"
+              [innerHTML]="doc.description.substring(0, 300).trimEnd() + '...'"
             ></p>
           </div>
           <div class="card-footer d-flex flex-row-reverse">

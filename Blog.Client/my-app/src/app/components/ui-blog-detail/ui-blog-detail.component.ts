@@ -34,7 +34,7 @@ export class UiBlogDetailComponent {
       { id: this.itemId },
       (res) => {
         this.blog = res;
-        console.log(this.itemId);
+        this.blog.content = this.blog.content.replace(/&nbsp;/g, ' ');
       }
     );
   }

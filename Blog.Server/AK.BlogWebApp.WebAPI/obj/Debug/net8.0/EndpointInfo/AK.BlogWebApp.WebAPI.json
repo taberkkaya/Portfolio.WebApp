@@ -1423,6 +1423,10 @@
           "profession": {
             "type": "string",
             "nullable": true
+          },
+          "linkedinUrl": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

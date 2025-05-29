@@ -7,5 +7,6 @@ public sealed record UpdateHeaderAreaCommand(
     Guid Id,
     string FirstName,
     string LastName,
-    string Profession
+    string Profession,
+    string LinkedinUrl
     ) : IRequest<Result<string>>;

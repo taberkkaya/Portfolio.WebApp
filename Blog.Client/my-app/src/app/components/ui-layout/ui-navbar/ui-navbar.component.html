@@ -2,14 +2,15 @@
   <div class="container my-0 py-0 text-start">
     <a href="index.html" class="header-title"
       ><h2>
-        Ataberk Kaya<span class="title"
-          ><span id="pipe"> | </span>Full Stack Software Developer</span
+        {{ headerArea.firstName }} {{ headerArea.lastName
+        }}<span class="title"
+          ><span id="pipe"> | </span>{{ headerArea.profession }}</span
         >
       </h2></a
     >
   </div>
   <div class="me-auto d-none d-md-block">
-    <a class="text-white" href="https://www.linkedin.com/in/taberkkaya/"
+    <a class="text-white" href="{{ headerArea.linkedinUrl }}"
       ><i class="fa-brands fa-linkedin-in fa-2xl"></i
     ></a>
   </div>

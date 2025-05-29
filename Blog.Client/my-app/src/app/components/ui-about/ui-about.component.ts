@@ -30,6 +30,7 @@ export class UiAboutComponent {
   getDatas() {
     this.http.post<AboutModel>('AboutPage/GetActive', {}, (res) => {
       this.page = res;
+      this.page.description = this.page.description.replace(/&nbsp;/g, ' ');
     });
   }
 }

@@ -46,6 +46,9 @@ export class UiHomeComponent {
       this.page = res;
       this.blogs = this.page.featuredBlogs;
       this.docs = this.page.featuredDocuments;
+
+      this.page.headerContent = this.page.headerContent.replace(/&nbsp;/g, ' ');
+      this.page.mainContent = this.page.mainContent.replace(/&nbsp;/g, ' ');
     });
   }
 }

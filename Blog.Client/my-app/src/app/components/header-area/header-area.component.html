@@ -44,6 +44,19 @@
             />
             <div class="invalid-feedback"></div>
           </div>
+
+          <div class="form-group">
+            <label>LinkedIn Profil Linki*</label>
+            <input
+              type="text"
+              required
+              minlength="3"
+              [(ngModel)]="this.headerArea.linkedinUrl"
+              class="form-control"
+              name="linkedinUrl"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="submit" class="btn btn-primary">Güncelle</button>

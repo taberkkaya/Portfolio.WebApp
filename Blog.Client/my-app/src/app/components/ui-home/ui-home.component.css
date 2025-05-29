@@ -1,0 +1,9 @@
+div {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+p.ql-align-center {
+  text-align: center;
+}

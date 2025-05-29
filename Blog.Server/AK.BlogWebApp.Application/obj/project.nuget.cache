@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aSSQ9K0VODE=",
+  "dgSpecHash": "gvbkX9J5/XQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ataberk\\Desktop\\deneme\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Application\\AK.BlogWebApp.Application.csproj",
+  "projectFilePath": "C:\\ProjectCollection\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Application\\AK.BlogWebApp.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ataberk\\.nuget\\packages\\ardalis.smartenum\\8.0.0\\ardalis.smartenum.8.0.0.nupkg.sha512",
     "C:\\Users\\ataberk\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",

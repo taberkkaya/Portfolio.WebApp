@@ -1,23 +1,22 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ataberk\\Desktop\\deneme\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Domain\\AK.BlogWebApp.Domain.csproj": {}
+    "C:\\ProjectCollection\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Domain\\AK.BlogWebApp.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ataberk\\Desktop\\deneme\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Domain\\AK.BlogWebApp.Domain.csproj": {
+    "C:\\ProjectCollection\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Domain\\AK.BlogWebApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ataberk\\Desktop\\deneme\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Domain\\AK.BlogWebApp.Domain.csproj",
+        "projectUniqueName": "C:\\ProjectCollection\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Domain\\AK.BlogWebApp.Domain.csproj",
         "projectName": "AK.BlogWebApp.Domain",
-        "projectPath": "C:\\Users\\ataberk\\Desktop\\deneme\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Domain\\AK.BlogWebApp.Domain.csproj",
+        "projectPath": "C:\\ProjectCollection\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Domain\\AK.BlogWebApp.Domain.csproj",
         "packagesPath": "C:\\Users\\ataberk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ataberk\\Desktop\\deneme\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Domain\\obj\\",
+        "outputPath": "C:\\ProjectCollection\\Blog.WebApp\\Blog.Server\\AK.BlogWebApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ataberk\\Desktop\\deneme\\Blog.WebApp\\Blog.Server\\NuGet.Config",
           "C:\\Users\\ataberk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -26,6 +25,7 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

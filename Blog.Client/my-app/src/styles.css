@@ -22,3 +22,15 @@ a {
   align-items: center;
   z-index: 9999;
 }
+
+.ql-align-center {
+  text-align: center;
+}
+
+.ql-align-right {
+  text-align: right;
+}
+
+.ql-align-justify {
+  text-align: justify;
+}

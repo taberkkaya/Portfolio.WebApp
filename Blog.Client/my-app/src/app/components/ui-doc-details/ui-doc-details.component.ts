@@ -34,7 +34,7 @@ export class UiDocDetailsComponent {
       { id: this.itemId },
       (res) => {
         this.doc = res;
-        console.log(this.doc);
+        this.doc.description = this.doc.description.replace(/&nbsp;/g, ' ');
       }
     );
   }

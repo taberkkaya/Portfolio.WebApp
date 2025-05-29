@@ -60,7 +60,7 @@ namespace AK.BlogWebApp.Infrastructure.Migrations
                         new
                         {
                             Id = new Guid("58eb3902-48a5-48e7-b5a8-b43847f0f6bf"),
-                            CreatedDate = new DateTime(2025, 5, 10, 1, 1, 31, 111, DateTimeKind.Utc).AddTicks(6981),
+                            CreatedDate = new DateTime(2025, 5, 29, 15, 5, 44, 271, DateTimeKind.Utc).AddTicks(7313),
                             Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                             ImgUrl = "full-stack-devlopment-min_20250510_033652.png",
                             IsActive = true,
@@ -269,28 +269,28 @@ namespace AK.BlogWebApp.Infrastructure.Migrations
                         new
                         {
                             Id = new Guid("58eb3902-48a5-48e7-b5a8-b43847f0f6bf"),
-                            CreatedDate = new DateTime(2025, 5, 10, 4, 1, 31, 111, DateTimeKind.Local).AddTicks(9403),
+                            CreatedDate = new DateTime(2025, 5, 29, 18, 5, 44, 271, DateTimeKind.Local).AddTicks(9372),
                             IsActive = false,
                             Title = "What is Lorem Ipsum?"
                         },
                         new
                         {
                             Id = new Guid("0b6c5c91-9d48-4e9b-8b5d-fed05be56a73"),
-                            CreatedDate = new DateTime(2025, 5, 10, 4, 1, 31, 111, DateTimeKind.Local).AddTicks(9421),
+                            CreatedDate = new DateTime(2025, 5, 29, 18, 5, 44, 271, DateTimeKind.Local).AddTicks(9385),
                             IsActive = false,
                             Title = "What is Lorem Ipsum?"
                         },
                         new
                         {
                             Id = new Guid("6def4f3d-93b9-4c24-97e1-143499f2955f"),
-                            CreatedDate = new DateTime(2025, 5, 10, 4, 1, 31, 111, DateTimeKind.Local).AddTicks(9423),
+                            CreatedDate = new DateTime(2025, 5, 29, 18, 5, 44, 271, DateTimeKind.Local).AddTicks(9387),
                             IsActive = false,
                             Title = "What is Lorem Ipsum?"
                         },
                         new
                         {
                             Id = new Guid("d7a19c6c-0d9f-4d10-9207-cfc9c8499a32"),
-                            CreatedDate = new DateTime(2025, 5, 10, 4, 1, 31, 111, DateTimeKind.Local).AddTicks(9425),
+                            CreatedDate = new DateTime(2025, 5, 29, 18, 5, 44, 271, DateTimeKind.Local).AddTicks(9388),
                             IsActive = false,
                             Title = "What is Lorem Ipsum?"
                         });
@@ -491,28 +491,28 @@ namespace AK.BlogWebApp.Infrastructure.Migrations
                         new
                         {
                             Id = new Guid("58eb3902-48a5-48e7-b5a8-b43847f0f6bf"),
-                            CreatedDate = new DateTime(2025, 5, 10, 4, 1, 31, 112, DateTimeKind.Local).AddTicks(954),
+                            CreatedDate = new DateTime(2025, 5, 29, 18, 5, 44, 272, DateTimeKind.Local).AddTicks(826),
                             IsActive = false,
                             Title = "What is Lorem Ipsum?"
                         },
                         new
                         {
                             Id = new Guid("0b6c5c91-9d48-4e9b-8b5d-fed05be56a73"),
-                            CreatedDate = new DateTime(2025, 5, 10, 4, 1, 31, 112, DateTimeKind.Local).AddTicks(957),
+                            CreatedDate = new DateTime(2025, 5, 29, 18, 5, 44, 272, DateTimeKind.Local).AddTicks(828),
                             IsActive = false,
                             Title = "What is Lorem Ipsum?"
                         },
                         new
                         {
                             Id = new Guid("6def4f3d-93b9-4c24-97e1-143499f2955f"),
-                            CreatedDate = new DateTime(2025, 5, 10, 4, 1, 31, 112, DateTimeKind.Local).AddTicks(962),
+                            CreatedDate = new DateTime(2025, 5, 29, 18, 5, 44, 272, DateTimeKind.Local).AddTicks(830),
                             IsActive = false,
                             Title = "What is Lorem Ipsum?"
                         },
                         new
                         {
                             Id = new Guid("d7a19c6c-0d9f-4d10-9207-cfc9c8499a32"),
-                            CreatedDate = new DateTime(2025, 5, 10, 4, 1, 31, 112, DateTimeKind.Local).AddTicks(963),
+                            CreatedDate = new DateTime(2025, 5, 29, 18, 5, 44, 272, DateTimeKind.Local).AddTicks(832),
                             IsActive = false,
                             Title = "What is Lorem Ipsum?"
                         });
@@ -541,6 +541,10 @@ namespace AK.BlogWebApp.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("LinkedinUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Profession")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -560,6 +564,7 @@ namespace AK.BlogWebApp.Infrastructure.Migrations
                             FirstName = "Ataberk",
                             IsActive = false,
                             LastName = "Kaya",
+                            LinkedinUrl = "",
                             Profession = "Full Stack Software Developer"
                         });
                 });
@@ -606,7 +611,7 @@ namespace AK.BlogWebApp.Infrastructure.Migrations
                         new
                         {
                             Id = new Guid("58eb3902-48a5-48e7-b5a8-b43847f0f6bf"),
-                            CreatedDate = new DateTime(2025, 5, 10, 4, 1, 31, 112, DateTimeKind.Local).AddTicks(2199),
+                            CreatedDate = new DateTime(2025, 5, 29, 18, 5, 44, 272, DateTimeKind.Local).AddTicks(2026),
                             HeaderContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                             HeaderTitle = "What is Lorem Ipsum?",
                             IsActive = true,
